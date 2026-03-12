@@ -1,0 +1,168 @@
+/* Шрифты */
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.martian-mono {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* Сами половинки */
+
+div.main_half{
+    width: 100%;
+    height: calc(100vw / 3);
+    display: flex;
+    background-color: black;
+}
+div.first_half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1); 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 600px){
+    div.first_half{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 1); 
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* div.first_half_desc_text{
+    width: 40%;
+    height: calc(100vw / 10);
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Стиль текста */
+div.first_half_desc_text{
+    width: 260px;
+    background-color: rgba(255, 228, 196, 0.0);
+    display: flex;
+    flex-direction: column;
+}
+/* Стиль дива с текстом, если меньше 600 */
+@media (max-width: 600px){
+    div.first_half_desc_text{
+        width: 180px;
+        background-color: rgba(255, 228, 196, 0.0);
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Стиль большого текста */
+.first_half_desc_text>h1.montserrat{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+@media (max-width: 600px){
+    .first_half_desc_text>h1.montserrat{
+        font-weight: 700;
+        font-size: 1em;
+    }
+}
+
+/* Стиль маленького текста */
+.first_half_desc_text>p.montserrat{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+@media (max-width: 600px){
+    .first_half_desc_text>p.montserrat{
+        font-weight: 700;
+        font-size: 0.8em;
+    }
+}
+
+
+.first_half_desc_button>p.montserrat{
+    font-weight: 800;
+    font-size: 1em;
+}
+@media (max-width: 600px){
+    .first_half_desc_button>p.montserrat{
+        font-weight: 800;
+        font-size: 0.8em;
+    }
+}
+
+/* Стиль кнопки */
+button.first_half_desc_button{
+    transition-duration: 0.3s;
+    width: 260px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* Стиль кнопки, если меньше 600 */
+@media (max-width: 600px){
+    button.first_half_desc_button{
+        transition-duration: 0.3s;
+        width: 130px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+
+
+button.first_half_desc_button:hover{
+    transition-duration: 0.3s;
+    background-color: black;
+    color: white;
+}
+
+img.second_half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: yellow;
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}

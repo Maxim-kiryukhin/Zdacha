@@ -1,0 +1,124 @@
+.account_main .header_logo>p{
+    color: black;
+}
+.account_main .header_button.mid>p{
+    color: black;
+}
+.account_main .header_number>p{
+    color: black;
+}
+
+input{
+    all: unset;
+}
+
+
+/* Див по центру */
+.account_middle{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Большой заголовок */
+.account_middle .big_text{
+    font-size: 3em;
+}
+/* Див с двумя дивами */
+.two_log{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Див с картинкой и текстом */
+.login_soc{
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 45%;
+    padding: 15px;
+    border: 2px solid black;
+
+    margin-bottom: 20px;
+}
+.login_soc:hover{
+    transition: 0.6s;
+    border: 2px solid rgb(233, 0, 0);
+    cursor: pointer;
+}
+.login_soc>p{
+ margin-left: 10px;
+}
+/* Картинки для входа */
+.account_pic{
+    height: 25px;
+}
+
+.two_input{
+    height: 25%;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Инпут */
+.account_input{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.account_input>input{
+    border: 0;
+    background-color: rgb(236,236,236);
+    height: 70%;
+}
+input:focus {
+    border: 2px solid black;
+    background-color: white;
+}
+    
+
+/* Кнопка ВОЙТИ */
+.account_enter{
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23%;
+    height: 8%;
+    padding: 15px;
+    border: 2px solid black; 
+}
+.account_enter:hover{
+    transition: 0.6s;
+    border: 2px solid rgb(233, 0, 0);
+    cursor: pointer;
+}   
+
+.account_enter>p{
+    font-weight: 600;
+}
+
+.account_reg{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px){
+    .login_soc{
+        width: 70%;
+    }
+    .two_input{
+        width: 70%;
+    }
+    .account_enter{
+        width: 70%;
+    }
+}

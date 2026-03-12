@@ -1,0 +1,207 @@
+/* Шрифты */
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.martian-mono {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* Все блоки */
+.reviews_main{
+    width: 100%;
+    height: 55vh;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Штука, где 3 блока */
+.reviews_three_blocks{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width: 800px){
+    .reviews_three_blocks{
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+/* Блок с заголовком */
+.reviews_text{
+    width: 80%;
+    height: 10%;
+    /* background-color: rgb(163, 163, 207); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.reviews_text>p{
+    font-size: 2.4em;
+}
+@media (max-width: 1400px){
+
+    .reviews_text{
+        width: 80%;
+        height: 15%;
+        /* background-color: rgb(163, 163, 207); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .reviews_text>p{
+        font-size: 1.7em;
+    }
+}
+@media (max-width: 800px){
+    /* Все блоки */
+    .reviews_main{
+        width: 100%;
+        height: 40vh;
+        background-color: rgba(0, 255, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .reviews_text{
+        width: 80%;
+        height: 10%;
+        /* background-color: rgb(163, 163, 207); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .reviews_text>p{
+        font-size: 1em;
+    }
+}
+
+
+/* Сами блоки */
+.reviews_blocks{
+    width: 20%;
+    height: 80%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}  
+.reviews_blocks>p{
+    font-size: 1em;
+    
+}
+@media (max-width: 1400px){
+    .reviews_blocks{
+        width: 30%;
+        height: 80%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    } 
+    .reviews_blocks>p{
+        font-size: 1em;
+    }
+}
+@media (max-width: 800px){
+    .reviews_blocks{
+        width: 40%;
+        height: 90%;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    } 
+    .reviews_blocks>p{
+        font-size: 0.7em;
+    }
+}
+/* Стиль текста в кнопке*/
+
+.review_button>p.montserrat{
+    font-weight: 800;
+    font-size: 1em;
+}
+@media (max-width: 700px){
+    .review_button>p.montserrat{
+        font-weight: 800;
+        font-size: 0.7em;
+    }
+}
+
+/* Стиль кнопки */
+button.review_button{
+    transition-duration: 0.3s;
+    width: 60%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+/* Стиль кнопки, если меньше 600 */
+@media (max-width: 700px){
+    button.review_button{
+        transition-duration: 0.3s;
+        width: 75%;
+        height: 35px;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+button.review_button:hover{
+    transition-duration: 0.3s;
+    background-color: black;
+    color: white;
+}

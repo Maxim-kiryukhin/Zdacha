@@ -1,0 +1,207 @@
+.order-main{
+    width: 100%;
+
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items {
+    max-height: 2600px;
+    transition: 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+
+    width: 100%;
+
+    background-color: rgb(201, 201, 201);
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0;
+}
+
+.order{
+    width: 100%;
+    height: 200px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(236, 236, 236);
+
+    /* margin-bottom: 30px; */
+}
+
+.order .desc{
+    height: 100%;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.order .desc .name{
+    font-size: 2em;
+    word-wrap: break-word;
+}
+.order .desc .price p{
+    font-size: 2em;
+    /* font-weight: 600; */
+}
+
+.order .status {
+    width: 240px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aqua;
+}
+.order .status p{
+    font-size: 2em;
+    font-family: 'montserrat';
+}
+.order .new {
+    background-color: rgb(204,234,244);
+}
+.order .confirmed {
+    background-color: rgb(201,228,189);
+}
+.order .canceled {
+    background-color: rgb(245,188,176);
+}
+.order .declined {
+    background-color: rgb(245,188,176);
+}
+
+
+.order .buttons{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.order .buttons button{
+    transition-duration: 0.6s;
+    background-color: rgba(255, 255, 255, 0);
+
+    width: 230px;
+    height: 80px;
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.order .buttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+.order .buttons .cancel{
+    font-size: 2em;
+    font-family: 'montserrat';
+}
+
+
+
+
+@media (max-width: 600px){
+    .order {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(236, 236, 236);
+        /* margin-bottom: 30px; */
+    }
+
+    .order .desc {
+        height: 100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .order .desc .name {
+        font-size: 1.2em;
+        word-wrap: break-word;
+    }
+    .order .desc .price p {
+        font-size: 1.2em;
+    }
+
+    .order .status {
+        width: 160px;
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: aqua;
+    }
+    .order .status p{
+        font-size: 1.2em;
+        font-family: 'montserrat';
+    }
+    .order .new {
+        background-color: rgb(204,234,244);
+    }
+    .order .confirmed {
+        background-color: rgb(201,228,189);
+    }
+    .order .canceled {
+        background-color: rgb(245,188,176);
+    }
+    .order .declined {
+        background-color: rgb(245,188,176);
+    }
+
+    .order .buttons button{
+        transition-duration: 0.6s;
+        background-color: rgba(255, 255, 255, 0);
+
+        width: 140px;
+        height: 80px;
+
+        
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid black;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    .order .buttons .cancel {
+        font-size: 1em;
+        font-family: 'montserrat';
+    }
+}

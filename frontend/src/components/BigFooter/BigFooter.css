@@ -1,0 +1,259 @@
+/* Шрифты */
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+.oswald {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+.comfortaa {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.martian-mono {
+    font-family: "Martian Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+/* Сам футер */
+div.main_bigfooter{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(236,236,236);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Див с номерами */
+.bigfooter_numbers{
+    width: 13%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bigfooter_numbers>p{
+    font-size: 1em;
+}
+/* Див с иконками соцсетей */
+.bigfooter_icons{
+    width: 40%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+/* Стиль иконок */
+.icon{
+    width: 3vw;
+    height: 3vw;
+    /* background-color: rgba(80, 69, 179, 0); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    object-fit: cover;
+}
+.icon:hover{
+    cursor:pointer;
+}
+
+
+/* Див с почтовым адресом */
+.bigfooter_mail{
+    width: 13%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bigfooter_mail>p{
+    font-size: 1em;
+}
+
+@media (max-width: 1200px){
+    /* Див с номерами */
+    .bigfooter_numbers{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_numbers>p{
+        font-size: 1em;
+    }
+    /* Див с иконками соцсетей */
+    .bigfooter_icons{
+        width: 40%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly; 
+    }
+    /* Стиль иконок */
+    .icon{
+        width: 4vw;
+        height: 4vw;
+        /* background-color: rgba(80, 69, 179, 0); */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        object-fit: cover;
+    }
+    /* Див с почтовым адресом */
+    .bigfooter_mail{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_mail>p{
+        font-size: 1em;
+    }
+}
+@media (max-width: 800px){
+    /* Сам футер */
+    div.main_bigfooter{
+        width: 100%;
+        height: 9vh;
+        display: flex;
+        background-color: rgb(236,236,236);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* Див с номерами */
+    .bigfooter_numbers{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_numbers>p{
+        font-size: 0.6em;
+    }
+    /* Див с иконками соцсетей */
+    .bigfooter_icons{
+        width: 40%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly; 
+    }
+    /* Стиль иконок */
+    .icon{
+        width: 4vw;
+        height: 4vw;
+        /* background-color: rgba(80, 69, 179, 0); */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        object-fit: cover;
+    }
+    /* Див с почтовым адресом */
+    .bigfooter_mail{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_mail>p{
+        font-size: 0.6em;
+    }
+}
+@media (max-width: 800px){
+    /* Сам футер */
+    div.main_bigfooter{
+        width: 100%;
+        height: 9vh;
+        display: flex;
+        background-color: rgb(236,236,236);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    /* Див с номерами */
+    .bigfooter_numbers{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_numbers>p{
+        font-size: 0.6em;
+    }
+    /* Див с иконками соцсетей */
+    .bigfooter_icons{
+        width: 25%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly; 
+    }
+    /* Стиль иконок */
+    .icon{
+        width: 4vw;
+        height: 4vw;
+        /* background-color: rgba(80, 69, 179, 0); */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        object-fit: cover;
+    }
+    /* Див с почтовым адресом */
+    .bigfooter_mail{
+        width: 20%;
+        height: 80%;
+    
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .bigfooter_mail>p{
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,140 @@
+.cart_main{
+    min-height: 70vh;
+    /* background-color: bisque; */
+
+    display: flex;
+    justify-content: space-around;
+}
+/* Левая часть корзины */
+.cart_main .left{
+    width: 60%;
+    /* min-height: 70vh; */
+    /* background-color: rgb(158, 117, 40); */
+
+    display: flex;
+    flex-direction: column;
+}
+/* ЗАГОЛОВК У БЛОКОВ */
+.cart_main .zagolovok{
+    /* padding-top: 3vh; */
+    font-size: 2em;
+    width: 100%;
+}
+.cart_main .zagolovok{
+    /* padding-top: 3vh; */
+    font-size: 2em;
+    width: 100%;
+}
+.cart_main .left .zagolovok p{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Правая часть корзины */
+.cart_main .right{
+    width: 30%;
+    /* min-height: 70vh; */
+    /* background-color: rgb(158, 117, 40); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right .total-price{
+    width: 100%;
+    height: 80px;
+
+    margin-top: 30px;
+
+    background-color: rgb(236, 236, 236);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right .total-price .total{
+    font-size: 1.5em;
+}
+.right .total-price .price{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.confirmation {
+    height: 360px;
+    width: 100%;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+.confirmation input {
+    transition-duration: 0.6s;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 80px;
+
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-family: 'montserrat';
+}
+.confirmation input:focus {
+    /* outline: 2px solid black; */
+    box-shadow: inset 0 0 0 2px black;
+    border: 0;
+    background-color: white;
+}
+/* Кнопка оформить */
+.confirmation .confirm>p.montserrat{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.confirmation .confirm{
+    transition-duration: 0.6s;
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+
+    margin-top: 40px;
+}
+.confirmation .confirm:hover{
+    background-color: black;
+    color: white;
+}
+    
+
+@media (max-width: 600px){
+    .cart_main {
+        min-height: 70vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cart_main .right {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_main .left {
+        width: 90%;
+        /* min-height: 70vh; */
+        /* background-color: rgb(158, 117, 40); */
+        display: flex;
+        flex-direction: column;
+    }
+}

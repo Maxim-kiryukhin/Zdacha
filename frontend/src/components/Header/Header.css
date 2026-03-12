@@ -1,0 +1,200 @@
+/* Сам хедер */
+div.header{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0, 255, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+
+/* Стиль всех кнопок */
+.header_button{
+    transition-duration: 0.3s;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0px solid rgb(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255, 0);
+    color: black;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+button.header_button:hover{
+    transition-duration: 0.3s;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+.header_button>p{
+    font-size: 1.1em;
+}
+/* Левая часть хедера */
+div.header_left{
+    width: 20%;
+    height: 70%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+/* Стиль текста номера */
+.header_number>p{
+    font-size: 1.3em;
+}
+
+
+/* Средняя часть хедера */
+div.header_middle{
+    width: 45%;
+    height: 70%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Стиль кнопки из середины */
+.header_button.mid{
+    transition-duration: 0.3s;
+    width: 50%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(255, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+button.header_button.mid:hover{
+    transition-duration: 0.3s;
+    border: 2px solid rgb(255, 0, 0, 0);
+}
+/* Стиль текста логотипа */
+.header_logo p{
+    font-size: 2.4em;
+    color: rgb(255, 255, 255);
+}
+/* Правая часть хедера */
+div.header_right{
+    width: 20%;
+    height: 70%;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+/* Картинка меню */
+.men{
+    background-image: url("src/assets/Иконки/меню_белый.png");
+    background-size: contain;
+}
+.men:hover{
+    background-image: url("src/assets/Иконки/меню_ховер_белый.png");
+}
+
+/* Картинка аккаунта */
+.acc{
+    background-image: url("src/assets/Иконки/аккаунт_белый.png");
+    background-size: contain;
+}
+.acc:hover{
+    background-image: url("src/assets/Иконки/аккаунт_ховер_белый.png");
+}
+/* Картинка корзины */
+.bas{
+    background-image: url("src/assets/Иконки/корзина_белый.png");
+    background-size: contain;
+}
+.bas:hover{
+    background-image: url("src/assets/Иконки/корзина_ховер_белый.png");
+}
+
+
+@media (max-width: 1000px){
+    .men{
+        width: 6vw;
+        height: 6vw;
+    }
+    .acc{
+        width: 6vw;
+        height: 6vw;
+    }
+    .bas{
+        width: 6vw;
+        height: 6vw;
+    }
+    .header_left{
+        width: 25%;
+    }
+    .header_number>p{
+        font-size: 1em;
+    }
+    .header_logo>p{
+        font-size: 1.7em;
+    }
+    .header_middle{
+        width: 35%;
+    }
+}
+
+@media (max-width: 800px){
+    .header_button{
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .header_left{
+        width: 25%;
+    }
+    .header_number>p{
+        font-size: 0.6em;
+    }
+    .header_logo>p{
+        font-size: 1.7em;
+    }
+    .header_middle{
+        width: 50%;
+    }
+    .header_button.mid{
+        width: 70%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 600px){
+    .header_number {
+        display: none;
+    }
+    .header_button.mid {
+        width: 100%;
+        font-size: 0.7em;
+    }
+    div.header_left {
+        width: 20%;
+        height: 70%;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    div.header_middle {
+        width: auto;
+        height: 70%;
+        background-color: rgba(0, 0, 255, 0);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

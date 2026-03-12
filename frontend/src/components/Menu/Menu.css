@@ -1,0 +1,94 @@
+/* Див с хедером и картинкой */
+.menu_header{
+    width: 100%;
+    height: 16vh;
+    background-image: url("src/assets/5230.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Средний див по всем остальным */
+.menu_middle{
+    width: 100%;
+    min-height: 75vh;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Див в среднем, с кнопками */
+.menu_select{
+    max-width: 70%;
+    /* width: 60%; */
+    /* height: 5vh; */
+    background-color: rgba(13, 46, 46, 0);
+    /* margin: 0.5em; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu_select>p{
+    cursor: pointer;
+}
+/* Кнопочки в меню */
+.select_but{
+    background-color: rgb(236,236,236);
+    height: 100%;
+    margin: 1em;
+    padding: 10px;
+
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+.select_but:hover{
+    background-color: black;
+    color: white;
+}
+.select_but>p{
+    color: black;
+}
+
+/* Див с различными блюдами */
+.menu_tap{
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 1000px){
+    .select_but{
+        margin: 0.6em;
+        padding: 7px;
+    }
+    .select_but>p{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 600px){
+    .select_but{
+        background-color: rgb(236,236,236);
+        height: 100%;
+        margin: 0.6em;
+        padding: 7px;
+
+        cursor: pointer;
+        transition-duration: 0.6s;
+    }
+    .select_but>p{
+        font-size: 0.7em;
+    }
+
+    .menu_select{
+        max-width: 90%;
+        background-color: rgba(13, 46, 46, 0);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

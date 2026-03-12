@@ -1,0 +1,231 @@
+/* Главная часть с картинкой блюда */
+
+div.about-main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../assets/20110.jpg");
+    background-attachment:fixed;
+    background-size: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 700px){
+    div.about-main{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url("../../assets/20110.jpg");
+        background-attachment:fixed;
+        background-size: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* Средний див и его текст*/
+
+.about-main div.text{
+    width: 30%;
+    height: 75vh;
+    background-color: rgba(255, 228, 196, 0.0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+/* Стиль если меньше 900 */
+@media (max-width: 900px){
+    .about-main div.text{
+        width: 100%;
+        height: 72vh;
+        background-color: rgba(255, 228, 196, 0.0);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        text-align: center;
+    }
+}
+
+.about-main .text p{
+    font-size: 2.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
+/* Лень было компонент делать */
+/* Сами половинки */
+
+div.about_half{
+    width: 100%;
+    height: calc(100vw / 3);
+    display: flex;
+    background-color: black;
+}
+.about_half .first_half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 1); 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about_half .pic{
+   height: 50%; 
+
+   margin-bottom: 30px;
+}
+.about_half .pic img{
+    max-height: 100%;
+}
+
+/* Стиль текста */
+.about_half div.first_half_desc_text{
+    width: 260px;
+    background-color: rgba(255, 228, 196, 0.0);
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about_half div.first_half_desc_text.second{
+    width: 500px;
+    background-color: rgba(255, 228, 196, 0.0);
+    font-size: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about_half .first_half_desc_text.second>h1.montserrat{
+    /* font-size: 1.5em; */
+    font-weight: 500;
+}
+
+/* Стиль дива с текстом, если меньше 600 */
+@media (max-width: 600px){
+    .about_half div.first_half_desc_text{
+        width: 180px;
+        background-color: rgba(255, 228, 196, 0.0);
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Стиль большого текста */
+.about_half .first_half_desc_text>h1.montserrat{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+@media (max-width: 600px){
+    .about_half .first_half_desc_text>h1.montserrat{
+        font-weight: 700;
+        font-size: 1.2em;
+    }
+}
+
+/* Стиль маленького текста */
+.about_half .first_half_desc_text>p.montserrat{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+@media (max-width: 600px){
+    .about_half .first_half_desc_text>p.montserrat{
+        font-weight: 700;
+        font-size: 1em;
+    }
+}
+
+
+.about_half .first_half_desc_button>p.montserrat{
+    font-weight: 800;
+    font-size: 1em;
+}
+
+img.second_half{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    background-color: yellow;
+    /* background-image: url(); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Заголовок перед салйдером */
+.zagolovok-slider{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 0.5em;
+}
+.zagolovok-slider .swiper-button-next{
+  color: black; /* Укажите ваш цвет */
+  /* Можно также изменить размер, если нужно */
+  /* font-size: 24px; */
+}
+.zagolovok-slider .swiper-button-prev {
+  color: black; /* Укажите ваш цвет */
+  /* Можно также изменить размер, если нужно */
+  /* font-size: 24px; */
+}
+.zagolovok-slider .zagolovok {
+    font-size: 2.4em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    padding: 0 35px !important;
+}
+
+
+@media (max-width: 600px){
+    .about_half div.first_half_desc_text{
+        width: 260px;
+        background-color: rgba(255, 228, 196, 0.0);
+        font-size: 0.6em;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .about_half .pic {
+    height: 50%;
+    }
+
+    .about_half div.first_half_desc_text.second {
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.0);
+        font-size: 0.8em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .zagolovok-slider .zagolovok {
+        font-size: 1.6em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-main .text p {
+        font-size: 1.8em;
+        color: white;
+        text-transform: uppercase;
+    }
+}
