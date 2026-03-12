@@ -92,28 +92,28 @@ div.header_black{
 }
 /* Картинка меню */
 .header_black .men{
-    background-image: url("src/assets/Иконки/меню.png");
+    background-image: url("../../assets/icons/menu.png");
     background-size: contain;
 }
 .header_black .men:hover{
-    background-image: url("src/assets/Иконки/меню_ховер.png");
+    background-image: url("../../assets/icons/menu_hover.png");
 }
 
 /* Картинка аккаунта */
 .header_black .acc{
-    background-image: url("src/assets/Иконки/аккаунт.png");
+    background-image: url("../../assets/icons/account.png");
     background-size: contain;
 }
 .header_black .acc:hover{
-    background-image: url("src/assets/Иконки/аккаунт_ховер.png");
+    background-image: url("../../assets/icons/account_hover.png");
 }
 /* Картинка корзины */
 .header_black .bas{
-    background-image: url("src/assets/Иконки/корзина.png");
+    background-image: url("../../assets/icons/cart.png");
     background-size: contain;
 }
 .header_black .bas:hover{
-    background-image: url("src/assets/Иконки/корзина_ховер.png");
+    background-image: url("../../assets/icons/cart_hover.png");
 }
 
 

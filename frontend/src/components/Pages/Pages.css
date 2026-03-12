@@ -67,7 +67,7 @@ div.header_pages{
 }
 
 
-div.header_menu{
+/* div.header_menu{
     display: flex;
     width: 3%;
     height: calc(6vw/2);
@@ -75,13 +75,13 @@ div.header_menu{
     background-image: url("../../assets/Иконки/list_1629421.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
-div.header_menu.korzina{
+/* div.header_menu.korzina{
     background-image: url("../../assets/Иконки/shopping-basket_11981475.png");
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 /* Стиль если меньше 900 */
 @media (max-width: 1100px){
     div.header_menu{
