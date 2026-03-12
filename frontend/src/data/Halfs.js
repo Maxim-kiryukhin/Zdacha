@@ -1,28 +1,33 @@
 // Половинки из главной страницы
+import photo10724 from '../assets/photos/10724.jpg'
+import photo927 from '../assets/photos/927.jpg'
+import photo3394 from '../assets/photos/3394.jpg'
+import photo391 from '../assets/photos/391.jpg'
+
 export const getHalfs = [
     {
-        url:'src/assets/Фото ресторанов/10724.jpg', //Ссылка на картинку в блоке
+        url: photo10724, //Ссылка на картинку в блоке
         Link:"Main2", //На что сменится перменная page
         adress_metro:"Москва, м Братиславская", //Что будет написанно большими буквами
         adress_street:"ул. Братиславская, д.12", //Что будет написанно маленькими
         button_text:"Перейти на сайт ресторана",
     },
     {
-        url:'src/assets/Фото ресторанов/927.jpg',
+        url: photo927,
         Link:"Main2",
         adress_metro:"Москва, м Алексеевская",
         adress_street:"пр-т Мира, д.118",
         button_text:"Перейти на сайт ресторана",
     },
     {
-        url:'src/assets/Фото ресторанов/3394.jpg',
+        url: photo3394,
         Link:"Main2",
         adress_metro:"Москва, м Таганская",
         adress_street:"Ул. Таганская, д.1/2, стр.2",
         button_text:"Перейти на сайт ресторана",
     },
     {
-        url:'src/assets/2172.jpg',
+        url: photo391,
         Link:"Main2",
         adress_metro:"Жуковский",
         adress_street:"Ул. Большая Пионерская, 7 с1",
@@ -34,14 +39,14 @@ export const getHalfs = [
 // Половинки для Братиславской
 export const getHalfs_Brat = [
     {
-        url:'src/assets/Фото ресторанов/10724.jpg', //Ссылка на картинку в блоке
+        url:photo10724, //Ссылка на картинку в блоке
         Link:"Find", //На что сменится перменная page
         adress_metro:"Еще на были у нас?", //Что будет написанно большими буквами
         adress_street:"Посмотрите на наш ресторан на карте", //Что будет написанно маленькими
         button_text:"Карта",
     },
     {
-        url:'src/assets/Фото ресторанов/927.jpg',
+        url:photo927,
         Link:"Menu",
         adress_metro:"Заинтресовало?",
         adress_street:"Познакомьтесь с нашим меню поближе",
@@ -51,14 +56,14 @@ export const getHalfs_Brat = [
 // Половинки для Алексеевской
 export const getHalfs_Alex = [
     {
-        url:'src/assets/Фото ресторанов/10724.jpg', //Ссылка на картинку в блоке
+        url:photo10724, //Ссылка на картинку в блоке
         Link:"Find", //На что сменится перменная page
         adress_metro:"Еще на были у нас?", //Что будет написанно большими буквами
         adress_street:"Посмотрите на наш ресторан на карте", //Что будет написанно маленькими
         button_text:"Карта",
     },
     {
-        url:'src/assets/Фото ресторанов/927.jpg',
+        url:photo927,
         Link:"Menu",
         adress_metro:"Заинтресовало?",
         adress_street:"Познакомьтесь с нашим меню поближе",
@@ -68,14 +73,14 @@ export const getHalfs_Alex = [
 // Половинки для Таганской
 export const getHalfs_Tagan = [
     {
-        url:'src/assets/Фото ресторанов/10724.jpg', //Ссылка на картинку в блоке
+        url:photo10724, //Ссылка на картинку в блоке
         Link:"Find", //На что сменится перменная page
         adress_metro:"Еще на были у нас?", //Что будет написанно большими буквами
         adress_street:"Посмотрите на наш ресторан на карте", //Что будет написанно маленькими
         button_text:"Карта",
     },
     {
-        url:'src/assets/Фото ресторанов/927.jpg',
+        url:photo927,
         Link:"Menu",
         adress_metro:"Заинтресовало?",
         adress_street:"Познакомьтесь с нашим меню поближе",
@@ -85,14 +90,14 @@ export const getHalfs_Tagan = [
 // Половинки для Жуковской
 export const getHalfs_Zhuk= [
     {
-        url:'src/assets/Фото ресторанов/10724.jpg', //Ссылка на картинку в блоке
+        url:photo10724, //Ссылка на картинку в блоке
         Link:"Find", //На что сменится перменная page
         adress_metro:"Еще на были у нас?", //Что будет написанно большими буквами
         adress_street:"Посмотрите на наш ресторан на карте", //Что будет написанно маленькими
         button_text:"Карта",
     },
     {
-        url:'src/assets/Фото ресторанов/927.jpg',
+        url:photo927,
         Link:"Menu",
         adress_metro:"Заинтресовало?",
         adress_street:"Познакомьтесь с нашим меню поближе",

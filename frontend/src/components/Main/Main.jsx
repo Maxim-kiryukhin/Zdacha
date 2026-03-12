@@ -5,6 +5,7 @@ import '../Footer/Footer'
 import Footer from '../Footer/Footer'
 import { getHalfs } from '../../data/Halfs'
 
+import photo10724 from '../../assets/photos/10724.jpg'
 
 function Main(props){
     return (
@@ -53,7 +54,7 @@ function Main(props){
                         <p className='montserrat'>О нас</p>
                     </button>
                 </div>
-                <img className='second_half' src="src/assets/Фото ресторанов/10724.jpg" alt="" />
+                <img className='second_half' src={photo10724} alt="" />
             </div>
 
 
