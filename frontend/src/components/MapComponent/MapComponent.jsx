@@ -14,14 +14,12 @@ function MapComponent(props) {
       if (element) {
         element.remove();
       }
-    }, 1);
-
-    const icons = document.querySelectorAll('.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive');
-  
-    icons.forEach(img => {
-      img.src = Icon;
-    });
-    return () => clearTimeout(timer);
+      const icons = document.querySelectorAll('.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive');
+      icons.forEach(img => {
+        img.src = Icon;
+      });
+      return () => clearTimeout(timer);
+    }, 10);
 
   }, []);
 
