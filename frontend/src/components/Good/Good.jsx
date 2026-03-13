@@ -62,7 +62,7 @@ function Good(props){
                 <div className='twodiv'>
                     <div className='left'>
                         <div className='zagolovok montserrat'>{props.name}</div>
-                        <div className='pic'><img src={`http://127.0.0.1:8000/${props.pic}`} alt="" /></div>
+                        <div className='pic'><img src={`${props.pic}`} alt="" /></div>
                     </div>
                     <div className='right'>
                         <div className='top-desc'>

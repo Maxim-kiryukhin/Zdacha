@@ -56,7 +56,7 @@ function Menu_comps(props){
     return (
         <>
             <div className='comp_main'>
-                <img src={`/${props.pic}`} onClick={() => props.GoodPage('Good', props.good)} alt="" className='comp_pic' />
+                <img src={`${props.pic}`} onClick={() => props.GoodPage('Good', props.good)} alt="" className='comp_pic' />
                 <div className='comp_all'>
                     <div className='comp_text'>
                         <div className='comp_top'>

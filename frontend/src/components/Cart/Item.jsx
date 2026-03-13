@@ -86,7 +86,7 @@ function Item(props){
         <>
             <div className='cart-item'>
                 <div className='pic' onClick={() => props.GoodPage('Good', props.item.good)}>
-                    <img src={`http://127.0.0.1:8000/${props.pic}`} alt="" />
+                    <img src={`${props.pic}`} alt="" />
                 </div>
                 <div className='desc'>
                     <div className='name'><p className='montserrat'>{`${props.name}`}</p></div>

@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer'
 import { getHalfs } from '../../data/Halfs'
 
 import photo10724 from '../../assets/photos/10724.jpg'
+import sitelogo from '../../assets/icons/site-icon.svg'
 
 function Main(props){
     return (
@@ -43,7 +44,7 @@ function Main(props){
             <div className='main-about_half'>
                 <div className='first_half'>
                     <div className='pic'>
-                        <img src="src\assets\Иконки\иконка-сайта.svg" alt="" />
+                        <img src={sitelogo} alt="" />
                     </div>
                     <div className='first_half_desc_text'>
                         <h1 className='martian-mono'>

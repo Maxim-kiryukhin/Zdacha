@@ -15,7 +15,8 @@ import { getBigFooter } from '../../data/BigFooter'
 import Header from '../Header/Header'
 import Slider from '../Swiper/Slider/Slider'
 
-
+import photo10724 from '../../assets/photos/10724.jpg'
+import photo927 from '../../assets/photos/927.jpg'
 
 function About(props){
     //Сам сделал, работает, но надо проверять
@@ -57,11 +58,11 @@ function About(props){
                         </p> */}
                     </div> 
                 </div>
-                <img className='second_half' src="src/assets/Фото ресторанов/10724.jpg" alt="" />
+                <img className='second_half' src={photo10724} alt="" />
             </div>
 
             <div className='about_half'>
-                <img className='second_half' src="src/assets/Фото ресторанов/927.jpg" alt="" />
+                <img className='second_half' src={photo927} alt="" />
                 <div className='first_half'>
                     <div className='first_half_desc_text second'>
                         <h1 className='montserrat'>

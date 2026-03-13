@@ -55,7 +55,7 @@ const MenuComps = (props) => {
     return (
         <div className='slider-comp'>
             <img 
-                src={`/${props.pic}`} 
+                src={`${props.pic}`} 
                 onClick={() => props.GoodPage && props.GoodPage('Good', props.good)} 
                 alt={props.name} 
                 className='comp_pic' 
