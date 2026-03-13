@@ -16,7 +16,7 @@ function MapComponent(props) {
       }
     }, 1);
 
-    const icons = document.querySelectorAll('.leaflet-marker-icon');
+    const icons = document.querySelectorAll('.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive');
   
     icons.forEach(img => {
       img.src = Icon;
