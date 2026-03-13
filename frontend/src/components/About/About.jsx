@@ -17,6 +17,7 @@ import Slider from '../Swiper/Slider/Slider'
 
 import photo10724 from '../../assets/photos/10724.jpg'
 import photo927 from '../../assets/photos/927.jpg'
+import sitelogo from '../../assets/icons/site-icon.svg'
 
 function About(props){
     //Сам сделал, работает, но надо проверять
@@ -47,7 +48,7 @@ function About(props){
             <div className='about_half'>
                 <div className='first_half'>
                     <div className='pic'>
-                        <img src="src\assets\Иконки\иконка-сайта.svg" alt="" />
+                        <img src={sitelogo} alt="" />
                     </div>
                     <div className='first_half_desc_text'>
                         <h1 className='martian-mono'>
