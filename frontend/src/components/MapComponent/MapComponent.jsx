@@ -14,6 +14,10 @@ function MapComponent(props) {
       if (element) {
         element.remove();
       }
+      const element2 = document.querySelector('.leaflet-pane.leaflet-shadow-pane');
+      if (element2) {
+        element2.remove();
+      }
       const icons = document.querySelectorAll('.leaflet-marker-icon.leaflet-zoom-animated.leaflet-interactive');
       icons.forEach(img => {
         img.src = Icon;
