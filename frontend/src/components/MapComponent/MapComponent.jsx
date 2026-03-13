@@ -3,17 +3,26 @@ import 'leaflet/dist/leaflet.css';
 
 import { useState, useEffect } from 'react'
 
+import Icon from '../../assets/icons/marker-icon.png'
+
 function MapComponent(props) {
   const position = [props.x, props.y];
 
   useEffect(() => {
-  const timer = setTimeout(() => {
-    const element = document.querySelector('.leaflet-attribution-flag');
-    if (element) {
-      element.remove();
-    }
-  }, 1);
-  return () => clearTimeout(timer);
+    const timer = setTimeout(() => {
+      const element = document.querySelector('.leaflet-attribution-flag');
+      if (element) {
+        element.remove();
+      }
+    }, 1);
+
+    const icons = document.querySelectorAll('.leaflet-marker-icon');
+  
+    icons.forEach(img => {
+      img.src = Icon;
+    });
+    return () => clearTimeout(timer);
+
   }, []);
 
   return (
