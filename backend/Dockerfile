@@ -15,4 +15,4 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # Запускаем через Gunicorn (промышленный сервер для Django)
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "myproject.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "store.wsgi:application"]
