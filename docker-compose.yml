@@ -6,6 +6,7 @@ services:
     volumes:
       - ./backend/db.sqlite3:/app/db.sqlite3 # Сохраняем БД на сервере
       - static_volume:/app/static
+      - media_volume:/app/MEDIA
     environment:
       - DEBUG=0
     ports:
@@ -17,8 +18,10 @@ services:
       - "80:80"
     volumes:
       - static_volume:/app/static
+      - media_volume:/app/MEDIA
     depends_on:
       - backend
 
 volumes:
   static_volume:
+  media_volume:
