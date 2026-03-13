@@ -5,7 +5,7 @@ function OrderItem(props){
         <>
             <div className='order-item'>
                 <div className='pic' onClick={() => props.GoodPage('Good', props.good)}>
-                    <img src={`/${props.good.pic}`} alt="" />
+                    <img src={`${props.good.pic}`} alt="" />
                 </div>
                 <div className='desc'>
                     <div className='name'><p className='montserrat'>{`${props.good.name}`}</p></div>
