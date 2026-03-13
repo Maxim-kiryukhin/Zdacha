@@ -5,6 +5,10 @@ import './Account.css'
 
 import Header_black from '../Header_black/Header_black'
 
+import maxicon from '../../assets/icons/soc/max.svg'
+import odnoklicon from '../../assets/icons/soc/odnokl.svg'
+import vkicon from '../../assets/icons/soc/vk.png'
+
 function Account(props){
 // 1. Состояния
     const [formData, setFormData] = useState({
@@ -59,11 +63,11 @@ function Account(props){
                     </div>
                     <div className='two_log'>
                         <div className='login_soc'>
-                            <img src="src\assets\Иконки\соц сети\max.svg" alt="" className='account_pic'/>
+                            <img src={maxicon} alt="" className='account_pic'/>
                             <p>Войти через Max</p>
                         </div>
                         <div className='login_soc'>
-                            <img src="src\assets\Иконки\соц сети\vk.png" alt="" className='account_pic'/>
+                            <img src={vkicon} alt="" className='account_pic'/>
                             <p>Войти через VK</p>
                         </div>
                     </div>
