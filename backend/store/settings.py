@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-k&%4gto_(bvb+%^e!uq!2=&5yyz69*8jcjaf!w+#sxs(7)wl$@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['root@155.212.208.151', '155.212.208.151', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['root@155.212.211.196', '155.212.211.196', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -52,6 +52,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:5173',
     'http://root@155.212.208.151',
     'http://155.212.208.151',
+    'http://root@155.212.211.196',
+    'http://155.212.211.196',
 ]
 CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SAMESITE = 'Lax'
@@ -61,6 +63,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:5173',
     'http://root@155.212.208.151',
     'http://155.212.208.151',
+    'http://root@155.212.211.196',
+    'http://155.212.211.196',
 ]
 
 ROOT_URLCONF = 'store.urls'
@@ -144,4 +148,4 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME' : timedelta(hours=10)
 }
 
-LOGOUT_REDIRECT_URL = 'http://155.212.208.151'
+LOGOUT_REDIRECT_URL = 'http://155.212.211.196'
