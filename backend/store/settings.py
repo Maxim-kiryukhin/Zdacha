@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# ВОТ ЭТИ РЕБЯТА !!!!!! 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
@@ -66,6 +67,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://root@155.212.211.196',
     'http://155.212.211.196',
 ]
+LOGOUT_REDIRECT_URL = 'http://155.212.211.196'
+# ВОТ ЭТИ РЕБЯТА !!!!!! 
 
 ROOT_URLCONF = 'store.urls'
 
@@ -148,4 +151,9 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME' : timedelta(hours=10)
 }
 
-LOGOUT_REDIRECT_URL = 'http://155.212.211.196'
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'django_cache_table', # Как она в БД будет
+    }
+}

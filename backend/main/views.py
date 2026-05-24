@@ -18,6 +18,9 @@ import uuid
 import datetime
 
 from django.db.models import F
+
+from django.core import cache
+
 # Create your views here.
 
 class Registration(APIView):
@@ -33,16 +36,31 @@ class Authorization(APIView):
         if serializer.is_valid():
             email = serializer.validated_data['email']
             password = serializer.validated_data['password']
+
+            attempts_key = f"login_attempts_{email}"
+            lockout_key = f"login_lockout_{email}"
+
+            if cache.get(lockout_key):
+                return Response(
+                    data={'message': 'Слишком много неудачных попыток. Доступ заблокирован на 5 минут.'}, 
+                    status=status.HTTP_423_LOCKED
+                )
+
             admin_user = authenticate(request, username = email.split("@")[0], password = password)
             if admin_user is not None and admin_user.is_staff:
                 login(request, admin_user)
+                cache.delete(attempts_key)
                 return Response(data={'is_admin' : True}, status=status.HTTP_200_OK)
             if models.MyUser.objects.filter(email = email).exists():
                 user = models.MyUser.objects.get(email = email)
                 if check_password(password, user.password):
-                    return Response(data={'token' : f'{AccessToken.for_user(user)}'}, status=status.HTTP_200_OK)
-                else: return Response(data={'message' : 'Ошибка в пароле'}, status=status.HTTP_400_BAD_REQUEST)
-            else: return Response(data={'message' : 'Ошибка в почте'}, status=status.HTTP_400_BAD_REQUEST)
+                    if (user.is_banned == False):
+                        cache.delete(attempts_key)
+                        return Response(data={'token' : f'{AccessToken.for_user(user)}'}, status=status.HTTP_200_OK)
+                    else:
+                        return Response(data={'is_banned' : True}, status=status.HTTP_200_OK)
+                return self.register_failed_attempt(attempts_key, lockout_key, 'Ошибка в пароле')
+            return self.register_failed_attempt(attempts_key, lockout_key, 'Ошибка в почте')
         else: return Response(data={'message' : 'Неправильный запрос'}, status=status.HTTP_400_BAD_REQUEST)
 
 class GetGoodsFromCategory(APIView):

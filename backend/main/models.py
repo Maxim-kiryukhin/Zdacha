@@ -13,6 +13,7 @@ class MyUser(models.Model):
     email = models.EmailField(blank=False, null=False, unique=True)
     password = models.CharField(blank=False, null=False)
     role = models.CharField(blank=False, null=False, choices=roles, default='client')
+    is_banned = models.BooleanField(default=False)
 
     @property
     def is_authenticated(self):
