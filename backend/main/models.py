@@ -3,7 +3,11 @@ from django.core.exceptions import ValidationError
 
 # Create your models here.
 
-roles = {'client' : 'Клиент', 'admin' : 'Администратор'}
+# roles = {'client' : 'Клиент', 'admin' : 'Администратор'}
+roles = [
+    ('client', 'Клиент'),
+    ('admin', 'Администратор'),
+]
 
 class MyUser(models.Model):
     name = models.CharField(blank=False, null=False, max_length=255)
@@ -27,8 +31,16 @@ class MyUser(models.Model):
 #     user = models.ForeignKey('MyUser', blank=False, null=False, on_delete=models.CASCADE)
 #     token = models.CharField(blank=False, null=False)
 
-categories = {'cold' : 'Холодные закуски', 'hot' : 'Горячие закуски', 'main' : 'Основные блюда', 'soup' : 'Супы', 'sweet' : 'Десерты', 'drinks' : 'Напитки', 'bar' : 'Барная карта'}
-
+# categories = {'cold' : 'Холодные закуски', 'hot' : 'Горячие закуски', 'main' : 'Основные блюда', 'soup' : 'Супы', 'sweet' : 'Десерты', 'drinks' : 'Напитки', 'bar' : 'Барная карта'}
+categories = [
+    ('cold', 'Холодные закуски'),
+    ('hot', 'Горячие закуски'),
+    ('main', 'Основные блюда'),
+    ('soup', 'Супы'),
+    ('sweet', 'Десерты'),
+    ('drinks', 'Напитки'),
+    ('bar', 'Барная карта'),
+]
 class Category(models.Model):
     name = models.CharField(blank=False, null=False, choices=categories, unique=True, max_length=255)
 
@@ -75,9 +87,13 @@ class Cart(models.Model):
         return super().save(*args, **kwargs)
 
 # ЗАКАЗЫ
-statuses = {'new' : 'Новый','confirmed' : 'Подтвержден', 
-            'canceled' : 'Отменен','declined' : 'Отказано'}
-
+# statuses = {'new' : 'Новый','confirmed' : 'Подтвержден', 'canceled' : 'Отменен','declined' : 'Отказано'}
+statuses = [
+    ('new', 'Новый'),
+    ('confirmed', 'Подтвержден'),
+    ('canceled', 'Отменен'),
+    ('declined', 'Отказано'),
+]
 class Order(models.Model):
     name = models.CharField(blank=False, null=False, max_length=255)
     user = models.ForeignKey('MyUser', on_delete=models.CASCADE, blank=False, null=False)
