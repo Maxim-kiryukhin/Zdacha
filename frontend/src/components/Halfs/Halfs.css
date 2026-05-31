@@ -23,33 +23,32 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 /* Сами половинки */
 
-div.main_half{
+div.main_half {
     width: 100%;
     height: calc(100vw / 3);
     display: flex;
     background-color: black;
 }
-div.first_half{
+div.first_half {
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgba(255, 255, 255, 1);
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-@media (max-width: 600px){
-    div.first_half{
+@media (max-width: 600px) {
+    div.first_half {
         width: 50%;
         height: 100%;
         display: flex;
-        background-color: rgba(255, 255, 255, 1); 
+        background-color: rgba(255, 255, 255, 1);
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
@@ -65,59 +64,58 @@ div.first_half{
 } */
 
 /* Стиль текста */
-div.first_half_desc_text{
+div.first_half_desc_text {
     width: 260px;
-    background-color: rgba(255, 228, 196, 0.0);
+    background-color: rgba(255, 228, 196, 0);
     display: flex;
     flex-direction: column;
 }
 /* Стиль дива с текстом, если меньше 600 */
-@media (max-width: 600px){
-    div.first_half_desc_text{
+@media (max-width: 600px) {
+    div.first_half_desc_text {
         width: 180px;
-        background-color: rgba(255, 228, 196, 0.0);
+        background-color: rgba(255, 228, 196, 0);
         display: flex;
         flex-direction: column;
     }
 }
 /* Стиль большого текста */
-.first_half_desc_text>h1.montserrat{
+.first_half_desc_text > h1.montserrat {
     font-weight: 700;
     font-size: 1.5em;
 }
-@media (max-width: 600px){
-    .first_half_desc_text>h1.montserrat{
+@media (max-width: 600px) {
+    .first_half_desc_text > h1.montserrat {
         font-weight: 700;
         font-size: 1em;
     }
 }
 
 /* Стиль маленького текста */
-.first_half_desc_text>p.montserrat{
+.first_half_desc_text > p.montserrat {
     font-weight: 700;
     font-size: 1.2em;
 }
-@media (max-width: 600px){
-    .first_half_desc_text>p.montserrat{
+@media (max-width: 600px) {
+    .first_half_desc_text > p.montserrat {
         font-weight: 700;
         font-size: 0.8em;
     }
 }
 
-
-.first_half_desc_button>p.montserrat{
+.first_half_desc_button > p.montserrat {
     font-weight: 800;
     font-size: 1em;
 }
-@media (max-width: 600px){
-    .first_half_desc_button>p.montserrat{
+@media (max-width: 600px) {
+    .first_half_desc_button > p.montserrat {
         font-weight: 800;
         font-size: 0.8em;
     }
 }
 
 /* Стиль кнопки */
-button.first_half_desc_button{
+button.first_half_desc_button {
     transition-duration: 0.3s;
     width: 260px;
     height: 50px;
@@ -132,8 +130,8 @@ button.first_half_desc_button{
     cursor: pointer;
 }
 /* Стиль кнопки, если меньше 600 */
-@media (max-width: 600px){
-    button.first_half_desc_button{
+@media (max-width: 600px) {
+    button.first_half_desc_button {
         transition-duration: 0.3s;
         width: 130px;
         height: 40px;
@@ -141,7 +139,7 @@ button.first_half_desc_button{
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         border: 2px solid black;
         background-color: white;
         color: black;
@@ -149,15 +147,13 @@ button.first_half_desc_button{
     }
 }
 
-
-
-button.first_half_desc_button:hover{
+button.first_half_desc_button:hover {
     transition-duration: 0.3s;
     background-color: black;
     color: white;
 }
 
-img.second_half{
+img.halfs_second_half {
     width: 50%;
     height: 100%;
     display: flex;
@@ -165,4 +161,35 @@ img.second_half{
     /* background-image: url(); */
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Мобилка */
+@media (max-width: 600px) {
+    div.main_half {
+        width: 100%;
+        height: calc(100vw / 1);
+        display: flex;
+        background-color: black;
+        flex-direction: column;
+    }
+
+    div.first_half {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: rgba(255, 255, 255, 1);
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img.halfs_second_half {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: yellow;
+        /* background-image: url(); */
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

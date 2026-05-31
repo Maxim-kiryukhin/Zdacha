@@ -23,42 +23,39 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
 /* Главная часть с картинкой блюда */
 
-div.main{
+div.main {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-image: url("../../assets/20110.jpg");
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: auto;
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 700px){
-    div.main{
+@media (max-width: 700px) {
+    div.main {
         width: 100%;
         height: 50vh;
         display: flex;
         flex-direction: column;
         background-image: url("../../assets/20110.jpg");
-        background-attachment:fixed;
+        background-attachment: fixed;
         background-size: auto;
         justify-content: space-between;
         align-items: center;
     }
 }
 
-
-
 /* Хедер и его части */
 
-div.main_header{
+div.main_header {
     width: 100%;
     height: 10vh;
     background-color: rgba(0, 255, 255, 0);
@@ -67,30 +64,30 @@ div.main_header{
     align-items: center;
 }
 
-div.main_header_left{
+div.main_header_left {
     display: flex;
     width: 30%;
     height: 70%;
     background-color: blue;
 }
 
-div.main_header_middle{
+div.main_header_middle {
     display: flex;
     height: 70%;
     width: 75%;
-    background-color: rgba(0, 0, 255, 0.0);
+    background-color: rgba(0, 0, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-overflow: clip; */
 }
 /* Стиль шрифта для средней части хедера */
-.main_header_middle p{
+.main_header_middle p {
     font-size: 2.4em;
     color: white;
 }
 
-div.main_header_right{
+div.main_header_right {
     display: flex;
     width: 30%;
     height: 70%;
@@ -99,22 +96,21 @@ div.main_header_right{
 
 /* Средний див и его текст*/
 
-
-div.text{
+div.text {
     width: 30%;
     height: 75vh;
-    background-color: rgba(255, 228, 196, 0.0);
+    background-color: rgba(255, 228, 196, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
     text-align: center;
 }
 /* Стиль если меньше 900 */
-@media (max-width: 900px){
-    div.text{
+@media (max-width: 900px) {
+    div.text {
         width: 100%;
         height: 72vh;
-        background-color: rgba(255, 228, 196, 0.0);
+        background-color: rgba(255, 228, 196, 0);
         display: flex;
         justify-content: space-evenly;
         align-items: flex-end;
@@ -122,7 +118,7 @@ div.text{
     }
 }
 
-.text p{
+.text p {
     font-size: 2.5em;
     color: white;
     text-transform: uppercase;
@@ -130,25 +126,25 @@ div.text{
 
 /* Нижний див и его текст*/
 
-div.text_small{
+div.text_small {
     width: 30%;
     height: 10vh;
-    background-color: rgba(143, 104, 30, 0.0);
+    background-color: rgba(143, 104, 30, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     text-align: center;
 }
-.text_small p{
+.text_small p {
     font-size: 1em;
     color: white;
 }
 /* Стиль если меньше 900 */
-@media (max-width: 900px){
-    div.text_small{
+@media (max-width: 900px) {
+    div.text_small {
         width: 70%;
         height: 10vh;
-        background-color: rgba(143, 104, 30, 0.0);
+        background-color: rgba(143, 104, 30, 0);
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
@@ -156,119 +152,112 @@ div.text_small{
     }
 }
 
-
-
-
 /* Половинка "О нас" */
 
-div.main-about_half{
+div.main-about_half {
     width: 100%;
     height: calc(100vw / 3);
     display: flex;
     align-items: center;
     background-color: rgb(255, 255, 255);
 }
-.main-about_half .first_half{
+.main-about_half .first_half {
     width: 50%;
     height: 60%;
     display: flex;
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgba(255, 255, 255, 1);
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
 }
-@media (max-width: 900px){
-    .main-about_half .first_half{
+@media (max-width: 900px) {
+    .main-about_half .first_half {
         width: 50%;
         height: 100%;
         display: flex;
-        background-color: rgba(255, 255, 255, 1); 
+        background-color: rgba(255, 255, 255, 1);
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
     }
-    
 }
-.main-about_half .pic{
-   height: 60%; 
+.main-about_half .pic {
+    height: 60%;
 }
-@media (max-width: 900px){
-    .main-about_half .pic{
+@media (max-width: 900px) {
+    .main-about_half .pic {
         height: 40%;
-    } 
+    }
 }
-.main-about_half .pic img{
+.main-about_half .pic img {
     max-height: 100%;
 }
 
 /* Стиль текста */
-.main-about_half div.first_half_desc_text{
+.main-about_half div.first_half_desc_text {
     width: 260px;
-    background-color: rgba(255, 228, 196, 0.0);
+    background-color: rgba(255, 228, 196, 0);
     font-size: 1em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.main-about_half div.first_half_desc_text.second{
+.main-about_half div.first_half_desc_text.second {
     width: 500px;
-    background-color: rgba(255, 228, 196, 0.0);
+    background-color: rgba(255, 228, 196, 0);
     font-size: 1em;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-.main-about_half .first_half_desc_text.second>h1.montserrat{
+.main-about_half .first_half_desc_text.second > h1.montserrat {
     /* font-size: 1.5em; */
     font-weight: 500;
 }
 
 /* Стиль дива с текстом, если меньше 600 */
-@media (max-width: 600px){
-    .main-about_half div.first_half_desc_text{
+@media (max-width: 600px) {
+    .main-about_half div.first_half_desc_text {
         width: 180px;
-        background-color: rgba(255, 228, 196, 0.0);
+        background-color: rgba(255, 228, 196, 0);
         display: flex;
         flex-direction: column;
         font-size: 0.5em;
     }
 }
 /* Стиль большого текста */
-.main-about_half .first_half_desc_text>h1.montserrat{
+.main-about_half .first_half_desc_text > h1.montserrat {
     font-weight: 700;
     font-size: 1.5em;
 }
-@media (max-width: 600px){
-    .main-about_half .first_half_desc_text>h1.montserrat{
+@media (max-width: 600px) {
+    .main-about_half .first_half_desc_text > h1.montserrat {
         font-weight: 700;
         font-size: 1em;
     }
 }
 
 /* Стиль маленького текста */
-.main-about_half .first_half_desc_text>p.montserrat{
+.main-about_half .first_half_desc_text > p.montserrat {
     font-weight: 700;
     font-size: 1.2em;
 }
-@media (max-width: 600px){
-    .main-about_half .first_half_desc_text>p.montserrat{
+@media (max-width: 600px) {
+    .main-about_half .first_half_desc_text > p.montserrat {
         font-weight: 700;
         font-size: 1em;
     }
 }
 
-
-.main-about_half .first_half_desc_button>p.montserrat{
+.main-about_half .first_half_desc_button > p.montserrat {
     font-weight: 800;
     font-size: 1em;
 }
 
-img.second_half{
+img.second_half {
     width: 50%;
     height: 100%;
     display: flex;
@@ -276,4 +265,19 @@ img.second_half{
     /* background-image: url(); */
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 600px) {
+    div.main-about_half {
+        /* height: calc(100vw / 1); */
+        height: auto;
+        flex-direction: column;
+    }
+    .main-about_half .first_half {
+        width: 100%;
+        height: 200px;
+    }
+    .main-about_half .second_half {
+        width: 100%;
+    }
 }

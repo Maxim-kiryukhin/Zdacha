@@ -9,6 +9,16 @@ import photo10724 from '../../assets/photos/10724.jpg'
 import sitelogo from '../../assets/icons/site-icon.svg'
 
 function Main(props){
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
     return (
         <>
             <div className='main'>
@@ -35,10 +45,53 @@ function Main(props){
                 </div>
             </div>
 
-            <Halfs order="0" OnClick={props.OnClick} {...getHalfs[0]}></Halfs>
-            <Halfs order="1" OnClick={props.OnClick} {...getHalfs[1]}></Halfs>
-            <Halfs order="0" OnClick={props.OnClick} {...getHalfs[2]}></Halfs>
-            <Halfs order="1" OnClick={props.OnClick} {...getHalfs[3]}></Halfs>
+            {windowWidth > 600 ? (
+                <>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[0]}
+                    ></Halfs>
+                    <Halfs
+                        order="1"
+                        OnClick={props.OnClick}
+                        {...getHalfs[1]}
+                    ></Halfs>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[2]}
+                    ></Halfs>
+                    <Halfs
+                        order="1"
+                        OnClick={props.OnClick}
+                        {...getHalfs[3]}
+                    ></Halfs>
+                </>
+            ) : (
+                <>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[0]}
+                    ></Halfs>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[1]}
+                    ></Halfs>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[2]}
+                    ></Halfs>
+                    <Halfs
+                        order="0"
+                        OnClick={props.OnClick}
+                        {...getHalfs[3]}
+                    ></Halfs>
+                </>
+            )}
 
 
             <div className='main-about_half'>
