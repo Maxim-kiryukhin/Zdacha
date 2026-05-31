@@ -49,7 +49,7 @@ class Category(models.Model):
 
 class Good(models.Model):
     name = models.CharField(blank=False, null=False, max_length=255)
-    price = models.DecimalField(blank=False, null=False, max_digits=100, decimal_places=2)
+    price = models.DecimalField(blank=False, null=False, max_digits=10, decimal_places=2)
     description = models.CharField(blank=False, null=False, max_length=255)
     weight = models.IntegerField(blank=False, null=False)
     ingredients = models.CharField(blank=False, null=False, max_length=255)
@@ -80,7 +80,7 @@ class Cart(models.Model):
     good = models.ForeignKey('Good', on_delete=models.CASCADE, blank=False, null=False)
     user = models.ForeignKey('MyUser', blank=False, null=False, on_delete=models.CASCADE)
     amount = models.IntegerField(blank=False, null=False)
-    price = models.DecimalField(max_digits=100, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def save(self, *args, **kwargs):
         self.price = self.good.price * self.amount
@@ -97,7 +97,7 @@ statuses = [
 class Order(models.Model):
     name = models.CharField(blank=False, null=False, max_length=255)
     user = models.ForeignKey('MyUser', on_delete=models.CASCADE, blank=False, null=False)
-    price = models.DecimalField(max_digits=100, decimal_places=2, default=0.00)
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
     status = models.CharField(choices=statuses, blank=False, null=False, max_length=255)
     reason_for_cancellation = models.CharField(blank=True, max_length=255)
 
@@ -112,6 +112,6 @@ class OrderItem(models.Model):
     good = models.ForeignKey('Good', on_delete=models.CASCADE, blank=False, null=False)
     user = models.ForeignKey('MyUser', blank=False, null=False, on_delete=models.CASCADE)
     amount = models.IntegerField(blank=False, null=False)
-    price = models.DecimalField(max_digits=100, decimal_places=2)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
     order = models.ForeignKey('Order', on_delete=models.CASCADE)
     
