@@ -6,13 +6,13 @@ from django.core.exceptions import ValidationError
 roles = {'client' : 'Клиент', 'admin' : 'Администратор'}
 
 class MyUser(models.Model):
-    name = models.CharField(blank=False, null=False)
-    surname = models.CharField(blank=False, null=False)
-    patronymic = models.CharField(blank=True)
-    login = models.CharField(blank=False, null=False)
+    name = models.CharField(blank=False, null=False, max_length=255)
+    surname = models.CharField(blank=False, null=False, max_length=255)
+    patronymic = models.CharField(blank=True, max_length=255)
+    login = models.CharField(blank=False, null=False, max_length=255)
     email = models.EmailField(blank=False, null=False, unique=True)
-    password = models.CharField(blank=False, null=False)
-    role = models.CharField(blank=False, null=False, choices=roles, default='client')
+    password = models.CharField(blank=False, null=False, max_length=255)
+    role = models.CharField(blank=False, null=False, choices=roles, default='client', max_length=255)
     is_banned = models.BooleanField(default=False)
 
     @property
@@ -30,17 +30,17 @@ class MyUser(models.Model):
 categories = {'cold' : 'Холодные закуски', 'hot' : 'Горячие закуски', 'main' : 'Основные блюда', 'soup' : 'Супы', 'sweet' : 'Десерты', 'drinks' : 'Напитки', 'bar' : 'Барная карта'}
 
 class Category(models.Model):
-    name = models.CharField(blank=False, null=False, choices=categories, unique=True)
+    name = models.CharField(blank=False, null=False, choices=categories, unique=True, max_length=255)
 
     def __str__(self):
         return self.name
 
 class Good(models.Model):
-    name = models.CharField(blank=False, null=False)
+    name = models.CharField(blank=False, null=False, max_length=255)
     price = models.DecimalField(blank=False, null=False, max_digits=100, decimal_places=2)
-    description = models.CharField(blank=False, null=False)
+    description = models.CharField(blank=False, null=False, max_length=255)
     weight = models.IntegerField(blank=False, null=False)
-    ingredients = models.CharField(blank=False, null=False)
+    ingredients = models.CharField(blank=False, null=False, max_length=255)
     production_date = models.DateTimeField(blank=False, null=False)
     category = models.ForeignKey('Category', blank=False, null=False, on_delete=models.CASCADE)
     amount_avaliable = models.IntegerField(blank=False, null=False, default=0)
@@ -79,11 +79,11 @@ statuses = {'new' : 'Новый','confirmed' : 'Подтвержден',
             'canceled' : 'Отменен','declined' : 'Отказано'}
 
 class Order(models.Model):
-    name = models.CharField(blank=False, null=False)
+    name = models.CharField(blank=False, null=False, max_length=255)
     user = models.ForeignKey('MyUser', on_delete=models.CASCADE, blank=False, null=False)
     price = models.DecimalField(max_digits=100, decimal_places=2, default=0.00)
-    status = models.CharField(choices=statuses, blank=False, null=False)
-    reason_for_cancellation = models.CharField(blank=True)
+    status = models.CharField(choices=statuses, blank=False, null=False, max_length=255)
+    reason_for_cancellation = models.CharField(blank=True, max_length=255)
 
     def save(self, *args, **kwargs):
         if self.status == 'declined' and self.reason_for_cancellation == '':
