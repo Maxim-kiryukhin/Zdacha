@@ -1,0 +1,1215 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$7r4Pa5IygumCaIUC149vgP$MIh5t2tzOjEJJIa1xKuitaSCFhl0HAE1uPL7TanZx90=",
+        "last_login": "2026-03-12T14:40:57.719Z",
+        "is_superuser": true,
+        "username": "a",
+        "first_name": "",
+        "last_name": "",
+        "email": "a@a.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-02-18T14:30:41.054Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "3uoi6z5ifbsenvje4j4bivvvvmlovufo",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZOP:6INwUKHqNJSsYwzUw4ulzCc1nbbmdozpKTPir-lNkw8",
+        "expire_date": "2026-03-23T12:07:25.664Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "bum8scmgpglxo3wx4ms716q099j4ajyl",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZC4:UF3sZxh1ehMpWLXIngDHL1nsrNIOyxte-g5No2XjNbg",
+        "expire_date": "2026-03-23T11:54:40.175Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "d6acfhokouwewkm1a1cdgf0qhw2aobm0",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzYxt:csHetIfSUPhDkVXcR6vt8Z7SMg0xnawD2xA3bHqqmiQ",
+        "expire_date": "2026-03-23T11:40:01.044Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gdzdht46ol4ftq9n194am48cjz7ldtln",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZ5D:LCU5zHRf_6gSsiTLUyqe_YsCQ8T8P87SI6hj-J0M3kY",
+        "expire_date": "2026-03-23T11:47:35.773Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o1e4ke8re4ka33ys5k1ib77a3t3nqfyd",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vsiZk:Vpqb45pbaWllkBWo5DmkcShVpwzoC889qj9ndLfTWzg",
+        "expire_date": "2026-03-04T14:30:48.080Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "oovnzewts3cmkldmtenjpxwf5kny9ssf",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzYya:6lQTr4jn4ZVqCeUutq_Id6RmU_p3_Ov1JADcIOeyrhQ",
+        "expire_date": "2026-03-23T11:40:44.878Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vh0gyxy1d5ci4bofyd8l79nc47j5ayh2",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZ6T:EIYkF2xP61LCHihyr4O6BWgrDcVImaE_j8Uzc6hVmeo",
+        "expire_date": "2026-03-23T11:48:53.455Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xltyiwt2jkzew8l45ni2qzdwvq3gs6md",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1w0hDd:I_-YasckaIkk4sgqIZ3RsP-3k8PB0I1vvuGkVQyCIz4",
+        "expire_date": "2026-03-26T14:40:57.727Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xribpxu3nk96mskdst7efk6v4ndiq7qu",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZ62:2nZJ6oBahSMpzH5Ne2TGitAMX-9Ea-Tpx1_wf_UDBag",
+        "expire_date": "2026-03-23T11:48:26.403Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "z2guw9kzay3sburt7mfxrv2gavy5qsv9",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzZHd:YrdFLwG-OL2j_GL_XiGRnHrFoS0EqWDQU6Ndx1o_lUI",
+        "expire_date": "2026-03-23T12:00:25.643Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "zb2p2cmqhoeasanfd4kmqlswsopk6qhx",
+    "fields": {
+        "session_data": ".eJxVjEEKwyAQAP_iuQirBrXH3vsG2V3XmrZEiMkp9O9FyKG9zgxzqIT7VtPeZU1zVlcF6vLLCPklyxD5icujaW7Lts6kR6JP2_W9ZXnfzvZvULHXsYUMEWyWXDCK9eSsBR_RTz4EwcKOrQvF8AQUiGLwBosRNCAlAhv1-QLn8Tg4:1vzYyB:LTRsFCALn9qWQqw64V3h9YpxCJEjMnB7u6c6tM08PoU",
+        "expire_date": "2026-03-23T11:40:19.666Z"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 1,
+    "fields": {
+        "name": "cold"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 2,
+    "fields": {
+        "name": "hot"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 3,
+    "fields": {
+        "name": "main"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 4,
+    "fields": {
+        "name": "soup"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 5,
+    "fields": {
+        "name": "sweet"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 6,
+    "fields": {
+        "name": "drinks"
+    }
+},
+{
+    "model": "main.category",
+    "pk": 7,
+    "fields": {
+        "name": "bar"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 1,
+    "fields": {
+        "name": "Тартар из говядины",
+        "price": "1800.00",
+        "description": "НЕЖНАЯ РУБЛЕНАЯ ГОВЯДИНА С ТРЮФЕЛЬНЫМ МАСЛОМ И КАПЕРСАМИ / ПОДАЁТСЯ С ЖАРЕНЫМ ХЛЕБОМ",
+        "weight": 200,
+        "ingredients": "Говядина, трюфель, белый хлеб.",
+        "production_date": "2026-02-18T14:49:35Z",
+        "category": 1,
+        "amount_avaliable": 3,
+        "pic": "goods/Тартар_из_говядины.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 2,
+    "fields": {
+        "name": "Креветки в чесночном соусе",
+        "price": "1500.00",
+        "description": "ТИГРОВЫЕ КРЕВЕТКИ С ЧЕСНОКОМ, ПЕТРУШКОЙ И БЕЛЫМ ВИНОМ",
+        "weight": 120,
+        "ingredients": "Тигровые креветки, чеснок, петрушка, белое вино",
+        "production_date": "2026-02-18T14:53:55Z",
+        "category": 2,
+        "amount_avaliable": 0,
+        "pic": "goods/креветки_в_соусе.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 3,
+    "fields": {
+        "name": "Брускетта с лососем",
+        "price": "1200.00",
+        "description": "ХЛЕБ С КОПЧЁНЫМ ЛОСОСЕМ, СЫРОМ ФИЛАДЕЛЬФИЯ И УКРОПОМ",
+        "weight": 150,
+        "ingredients": "Хлеб, копченный лосось, сыр \"Филадельфия\", укроп.",
+        "production_date": "2026-03-12T14:45:27Z",
+        "category": 1,
+        "amount_avaliable": 3,
+        "pic": "goods/Брускетта_с_лососем.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 4,
+    "fields": {
+        "name": "Сырная тарелка",
+        "price": "2500.00",
+        "description": "АССОРТИ ИЗ 5 ВИДОВ СЫРОВ С ОРЕХАМИ, МЁДОМ И ВИННЫМ ЖЕЛЕ",
+        "weight": 320,
+        "ingredients": "Сыр «Пармезан», сыр «Дорблю», сыр «Чеддер», сыр «Бри», сыр «Гауда», грецкий орех, кешью, мёд, винное желе.",
+        "production_date": "2026-03-12T14:53:33Z",
+        "category": 1,
+        "amount_avaliable": 2,
+        "pic": "goods/Сырная_тарелка.webp"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 5,
+    "fields": {
+        "name": "Жульен с грибами",
+        "price": "950.00",
+        "description": "ШАМПИНЬОНЫ В СЛИВОЧНОМ СОУСЕ ПОД СЫРНОЙ КОРОЧКОЙ",
+        "weight": 300,
+        "ingredients": "Шампиньоны, сливки, сыр «Гауда», лук репчатый",
+        "production_date": "2026-03-12T14:56:20Z",
+        "category": 2,
+        "amount_avaliable": 1,
+        "pic": "goods/Жульен_с__грибами.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 6,
+    "fields": {
+        "name": "Мидии в сливочном бульоне",
+        "price": "1300.00",
+        "description": "СВЕЖИЕ МИДИИ С ШАФРАНОМ И БАГЕТОМ",
+        "weight": 200,
+        "ingredients": "Мидии в ракушках, сливки, шафран, чеснок, белое вино, багет.",
+        "production_date": "2026-03-12T14:58:48Z",
+        "category": 2,
+        "amount_avaliable": 2,
+        "pic": "goods/Мидии_в_сливочном_бульоне.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 7,
+    "fields": {
+        "name": "Кальмары в темпуре",
+        "price": "1100.00",
+        "description": "ХРУСТЯЩИЕ КОЛЬЦА КАЛЬМАРА",
+        "weight": 120,
+        "ingredients": "Кальмар, мука, панировка, лимон, салат.",
+        "production_date": "2026-03-12T15:02:39Z",
+        "category": 2,
+        "amount_avaliable": 2,
+        "pic": "goods/Кальмары_в_темпуре.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 8,
+    "fields": {
+        "name": "Утка по-пекински",
+        "price": "2800.00",
+        "description": "ХРУСТЯЩАЯ УТИНАЯ КОЖА С МАНДАРИНОВЫМ СОУСОМ И БЛИНАМИ",
+        "weight": 600,
+        "ingredients": "Кожа утиная, мука, яйцо куриное, соус мандариновый, блины пшеничные, свежий огурец, зеленый лук.",
+        "production_date": "2026-03-12T15:05:31Z",
+        "category": 3,
+        "amount_avaliable": 1,
+        "pic": "goods/Утка_по-пекински.jpeg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 9,
+    "fields": {
+        "name": "Равиоли с трюфелем",
+        "price": "1900.00",
+        "description": "ДОМАШНИЕ РАВИОЛИ С СЫРОМ И ТРЮФЕЛЬНОЙ ПАСТОЙ",
+        "weight": 120,
+        "ingredients": "Мука из твердых сортов пшеницы, яйцо куриное, сыр «Рикотта», сыр «Пармезан», трюфельная паста, сливки, сливочное масло, специи.",
+        "production_date": "2026-03-12T15:06:45Z",
+        "category": 3,
+        "amount_avaliable": 5,
+        "pic": "goods/Равиоли_с_трюфелем.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 10,
+    "fields": {
+        "name": "Гаспачо",
+        "price": "850.00",
+        "description": "ОХЛАЖДЁННЫЙ ТОМАТНЫЙ СУП С БАЗИЛИКОМ И ЧЕСНОЧНЫМИ КРОТОНАМИ",
+        "weight": 250,
+        "ingredients": "Томаты свежие, сок томатный, базилик свежий, чеснок, оливковое масло, хлеб пшеничный, соль, черный перец.",
+        "production_date": "2026-03-12T15:08:15Z",
+        "category": 4,
+        "amount_avaliable": 1,
+        "pic": "goods/Гаспачо.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 11,
+    "fields": {
+        "name": "Сырный суп",
+        "price": "950.00",
+        "description": "НЕЖНЫЙ СУП С КОПЧЁНОСТЯМИ И ТРЁМЯ ВИДАМИ СЫРА",
+        "weight": 300,
+        "ingredients": "Сливки, сыр «Плавленый», сыр «Чеддер», сыр «Пармезан», бекон копчёный, ребрышки свиные копчёные, колбаски охотничьи, картофель, лук репчатый, морковь.",
+        "production_date": "2026-03-12T15:10:15Z",
+        "category": 4,
+        "amount_avaliable": 3,
+        "pic": "goods/Сырный_суп.webp"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 12,
+    "fields": {
+        "name": "Тирамису",
+        "price": "900.00",
+        "description": "КЛАССИЧЕСКИЙ ИТАЛЬЯНСКИЙ ДЕСЕРТ С МАСКАРПОНЕ И КОФЕЙНЫМ ПРОПИТЫВАНИЕМ",
+        "weight": 120,
+        "ingredients": "Сыр «Маскарпоне», печенье «Савоярди», кофе натуральный, яйцо куриное, сахар, какао-порошок.",
+        "production_date": "2026-03-12T15:12:58Z",
+        "category": 5,
+        "amount_avaliable": 2,
+        "pic": "goods/Тирамису.webp"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 13,
+    "fields": {
+        "name": "Шоколадный фондан",
+        "price": "850.00",
+        "description": "ТЁПЛЫЙ ШОКОЛАДНЫЙ КЕКС С ЖИДКОЙ СЕРЕДИНОЙ И ВАНИЛЬНЫМ МОРОЖЕНЫМ",
+        "weight": 120,
+        "ingredients": "Шоколад темный, масло сливочное, яйцо куриное, сахар, мука пшеничная, какао-порошок, мороженое ванильное.",
+        "production_date": "2026-03-12T15:15:13Z",
+        "category": 5,
+        "amount_avaliable": 2,
+        "pic": "goods/Шоколадный_фондан.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 14,
+    "fields": {
+        "name": "Крем-брюле",
+        "price": "800.00",
+        "description": "ФРАНЦУЗСКИЙ ДЕСЕРТ С ХРУСТЯЩЕЙ КАРАМЕЛЬНОЙ КОРОЧКОЙ",
+        "weight": 200,
+        "ingredients": "Сливки, яичные желтки, сахар, тростниковый сахар, стручковая ваниль.",
+        "production_date": "2026-03-12T15:16:03Z",
+        "category": 5,
+        "amount_avaliable": 1,
+        "pic": "goods/Крем-брюле.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 15,
+    "fields": {
+        "name": "Апероль Шприц",
+        "price": "750.00",
+        "description": "ИТАЛЬЯНСКИЙ АПЕРИТИВ С ПРОСЕККО И СОДОВОЙ",
+        "weight": 100,
+        "ingredients": "Игристое вино «Просекко», биттер «Апероль», вода газированная, апельсин свежий, лед.",
+        "production_date": "2026-03-12T15:18:14Z",
+        "category": 6,
+        "amount_avaliable": 7,
+        "pic": "goods/Апероль_шприц.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 16,
+    "fields": {
+        "name": "Вишнёвый лимонад",
+        "price": "450.00",
+        "description": "ОСВЕЖАЮЩИЙ ДОМАШНИЙ ЛИМОНАД С ВИШНЕЙ И БАЗИЛИКОМ",
+        "weight": 240,
+        "ingredients": "Вишня свежемороженая, свежий базилик, лимонный сок, сахарный сироп, вода газированная, лёд.",
+        "production_date": "2026-03-12T15:19:35Z",
+        "category": 6,
+        "amount_avaliable": 2,
+        "pic": "goods/Вишнёвый_лимонад.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 17,
+    "fields": {
+        "name": "Латте с сиропом",
+        "price": "400.00",
+        "description": "КОФЕ С МОЛОКОМ И СИРОПОМ НА ВЫБОР (ВАНИЛЬ, КАРАМЕЛЬ, ФУНДУК)",
+        "weight": 200,
+        "ingredients": "Кофе натуральный (арабика), молоко коровье, сироп на выбор (ванильный, карамельный или фундучный), вода.",
+        "production_date": "2026-03-12T15:20:23Z",
+        "category": 6,
+        "amount_avaliable": 3,
+        "pic": "goods/Латте_с_сиропом.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 18,
+    "fields": {
+        "name": "Вино Просекко",
+        "price": "2900.00",
+        "description": "ИГРИСТОЕ ВИНО ИТАЛЬЯНСКОГО ПРОИСХОЖДЕНИЯ / БУТЫЛКА 0.75 Л",
+        "weight": 750,
+        "ingredients": "Виноград сорта «Глера», дрожжи винные, диоксид серы (антиокислитель).",
+        "production_date": "2026-03-12T15:21:24Z",
+        "category": 7,
+        "amount_avaliable": 10,
+        "pic": "goods/Вино_Просекко.jpg"
+    }
+},
+{
+    "model": "main.good",
+    "pk": 19,
+    "fields": {
+        "name": "Коньяк",
+        "price": "4500.00",
+        "description": "ФРАНЦУЗСКИЙ КОНЬЯК VSOP / ПОРЦИЯ 50 МЛ",
+        "weight": 50,
+        "ingredients": "Коньячный дистиллят из винограда сортов «Уни Блан», «Фоль Бланш», «Коломбар», вода подготовленная, карамель.",
+        "production_date": "2026-03-12T15:22:43Z",
+        "category": 7,
+        "amount_avaliable": 2,
+        "pic": "goods/Коньяк.jpg"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-02-18T14:30:58.690Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Category object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-02-18T14:50:17.058Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "1",
+        "object_repr": "Good object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-02-18T14:52:54.452Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "2",
+        "object_repr": "hot",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-02-18T14:54:09.642Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "2",
+        "object_repr": "Good object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-02-18T15:22:54.233Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "object_id": "1",
+        "object_repr": "Cart object (1)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-02-18T15:24:23.266Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "object_id": "2",
+        "object_repr": "Cart object (2)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-02-25T13:42:34.389Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "myuser"
+        ],
+        "object_id": "3",
+        "object_repr": "tyvy64586@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-02-25T13:42:39.613Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "myuser"
+        ],
+        "object_id": "1",
+        "object_repr": "tyvy64581@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-02-25T13:42:42.414Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "myuser"
+        ],
+        "object_id": "2",
+        "object_repr": "tyvy64582@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-02-25T14:47:03.810Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "2",
+        "object_repr": "Креветки в чесночном соусе",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Amount avaliable\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-02-25T14:47:07.955Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "1",
+        "object_repr": "Тартар из говядины",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Amount avaliable\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-02-27T15:00:57.196Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "order"
+        ],
+        "object_id": "4",
+        "object_repr": "Order object (4)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-02-27T17:49:46.482Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "order"
+        ],
+        "object_id": "8",
+        "object_repr": "Order object (8)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-02-28T10:54:52.749Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "1",
+        "object_repr": "Тартар из говядины",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Amount avaliable\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-02-28T10:59:23.367Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "1",
+        "object_repr": "Тартар из говядины",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Amount avaliable\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-03-12T14:41:13.242Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "cart"
+        ],
+        "object_id": "72",
+        "object_repr": "Cart object (72)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-03-12T14:42:00.797Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "myuser"
+        ],
+        "object_id": "4",
+        "object_repr": "tyvy64581@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-03-12T14:48:17.263Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "3",
+        "object_repr": "Брускетта с лососем",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-03-12T14:53:42.024Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "4",
+        "object_repr": "Сырная тарелка",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-03-12T14:56:26.677Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "5",
+        "object_repr": "Жульен с грибами",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-03-12T14:58:54.075Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "6",
+        "object_repr": "Мидии в сливочном бульоне",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-03-12T15:02:43.476Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "7",
+        "object_repr": "Кальмары в темпуре",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-03-12T15:02:51.902Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "3",
+        "object_repr": "main",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-03-12T15:02:56.118Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "4",
+        "object_repr": "soup",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-03-12T15:02:58.356Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "5",
+        "object_repr": "sweet",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-03-12T15:03:00.438Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "6",
+        "object_repr": "drinks",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-03-12T15:03:04.091Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "category"
+        ],
+        "object_id": "7",
+        "object_repr": "bar",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-03-12T15:05:35.580Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "8",
+        "object_repr": "Утка по-пекински",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-03-12T15:05:42.651Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "7",
+        "object_repr": "Кальмары в темпуре",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Ingredients\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-03-12T15:05:48.915Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "3",
+        "object_repr": "Брускетта с лососем",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Ingredients\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-03-12T15:05:54.557Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "1",
+        "object_repr": "Тартар из говядины",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Ingredients\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-03-12T15:07:02.630Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "9",
+        "object_repr": "Равиоли с трюфелем",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-03-12T15:08:19.346Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "10",
+        "object_repr": "Гаспачо",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-03-12T15:10:21.382Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "11",
+        "object_repr": "Сырный суп",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-03-12T15:13:11.154Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "12",
+        "object_repr": "Тирамису",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-03-12T15:15:15.564Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "13",
+        "object_repr": "Шоколадный фондан",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-03-12T15:16:16.911Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "14",
+        "object_repr": "Крем-брюле",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-03-12T15:18:26.104Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "15",
+        "object_repr": "Апероль Шприц",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-03-12T15:19:41.310Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "16",
+        "object_repr": "Вишнёвый лимонад",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-03-12T15:20:28.092Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "17",
+        "object_repr": "Латте с сиропом",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-03-12T15:21:32.843Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "18",
+        "object_repr": "Вино Просекко",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-03-12T15:22:45.226Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "19",
+        "object_repr": "Коньяк",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-03-12T15:23:18.804Z",
+        "user": [
+            "a"
+        ],
+        "content_type": [
+            "main",
+            "good"
+        ],
+        "object_id": "19",
+        "object_repr": "Коньяк",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Ingredients\"]}}]"
+    }
+}
+]
