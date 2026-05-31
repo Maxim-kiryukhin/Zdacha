@@ -19,7 +19,7 @@ import datetime
 
 from django.db.models import F
 
-from django.core import cache
+from django.core.cache import cache
 
 # Create your views here.
 
