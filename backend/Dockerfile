@@ -1,6 +1,13 @@
 # Используем легкий образ Python
 FROM python:3.12-slim
 
+# Установка системных зависимостей для сборки mysqlclient
+RUN apt-get update && apt-get install -y \
+    default-libmysqlclient-dev \
+    build-essential \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
 # Устанавливаем рабочую директорию
 WORKDIR /app
 

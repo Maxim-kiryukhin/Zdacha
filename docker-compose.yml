@@ -1,16 +1,41 @@
 version: '3.8'
 
 services:
+  db:
+    image: mysql:8.0  # Или postgres:15
+    restart: always
+    environment:
+      MYSQL_DATABASE: my_project_db
+      MYSQL_USER: django_user
+      MYSQL_PASSWORD: secure_password_123
+      MYSQL_ROOT_PASSWORD: super_root_password_999
+    volumes:
+      - mysql_data:/var/lib/mysql # Сохраняем данные БД на хосте
+    ports:
+      - "3306:3306"
+
   backend:
     build: ./backend
     volumes:
-      - ./backend/db.sqlite3:/app/db.sqlite3 # Сохраняем БД на сервере
       - static_volume:/app/static
       - media_volume:/app/MEDIA
     environment:
       - DEBUG=0
+      # Конфигурация подключения к БД
+      - DB_ENGINE=django.db.backends.mysql # Для Postgres: django.db.backends.postgresql
+      - DB_NAME=my_project_db
+      - DB_USER=django_user
+      - DB_PASSWORD=secure_password_123
+      - DB_HOST=db
+      - DB_PORT=3306
+      # Переменные для автоматического создания суперпользователя
+      - DJANGO_SUPERUSER_USERNAME=admin
+      - DJANGO_SUPERUSER_EMAIL=admin@example.com
+      - DJANGO_SUPERUSER_PASSWORD=admin_password_555
     ports:
       - "8000:8000"
+    depends_on:
+      - db # Бэкенд запустится только после старта базы
 
   frontend:
     build: ./frontend
@@ -25,3 +50,4 @@ services:
 volumes:
   static_volume:
   media_volume:
+  mysql_data: # Новый волюм для базы данных
