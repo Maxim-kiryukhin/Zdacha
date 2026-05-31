@@ -63,6 +63,27 @@ class Authorization(APIView):
             return self.register_failed_attempt(attempts_key, lockout_key, 'Ошибка в почте')
         else: return Response(data={'message' : 'Неправильный запрос'}, status=status.HTTP_400_BAD_REQUEST)
 
+    def register_failed_attempt(self, attempts_key, lockout_key, default_message):
+        attempts = cache.get(attempts_key, 0) + 1
+        
+        if attempts >= 5:
+            # Блок на 5 минут
+            cache.set(lockout_key, True, timeout=300)
+            cache.delete(attempts_key)  # Обнуляем счетчик попыток
+            return Response(
+                data={'message': 'Превышено число попыток входа. Доступ заблокирован на 5 минут.'}, 
+                status=status.HTTP_423_LOCKED
+            )
+            
+        # Запоминаем количество попыток, тоже 5 минут
+        cache.set(attempts_key, attempts, timeout=300)
+        
+        remaining = 5 - attempts
+        return Response(
+            data={'message': f'{default_message}. Осталось попыток: {remaining}'}, 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
 class GetGoodsFromCategory(APIView):
     def get(self, request, category_name):
         category = models.Category.objects.filter(name = category_name).get()
