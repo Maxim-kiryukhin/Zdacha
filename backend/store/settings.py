@@ -52,6 +52,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:5173',
     'https://www.tasteandtradition.ru', 
     'https://tasteandtradition.ru',
+
+    'https://0.0.0.1', #W MAUI
+    'https://0.0.0.0', #A MAUI
+    'https://localhost',
 ]
 CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SAMESITE = 'Lax'
@@ -61,6 +65,10 @@ CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:5173',
     'https://www.tasteandtradition.ru', 
     'https://tasteandtradition.ru',
+
+    'https://0.0.0.1', #W MAUI
+    'https://0.0.0.0', #A MAUI
+    'https://localhost',
 ]
 LOGOUT_REDIRECT_URL = 'https://tasteandtradition.ru'
 
