@@ -15,10 +15,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k&%4gto_(bvb+%^e!uq!2=&5yyz69*8jcjaf!w+#sxs(7)wl$@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['root@83.222.19.148', '83.222.19.148', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['www.tasteandtradition.ru', 'tasteandtradition.ru', '83.222.19.148', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -51,10 +50,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    'http://root@83.222.19.148',
-    'http://83.222.19.148',
-    'http://root@155.212.211.196',
-    'http://155.212.211.196',
+    'https://www.tasteandtradition.ru', 
+    'https://tasteandtradition.ru',
 ]
 CORS_ALLOW_CREDENTIALS = True
 SESSION_COOKIE_SAMESITE = 'Lax'
@@ -62,12 +59,17 @@ SESSION_COOKIE_HTTPONLY = True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    'http://root@83.222.19.148',
-    'http://83.222.19.148',
-    'http://root@155.212.211.196',
-    'http://155.212.211.196',
+    'https://www.tasteandtradition.ru', 
+    'https://tasteandtradition.ru',
 ]
-LOGOUT_REDIRECT_URL = 'http://83.222.19.148'
+LOGOUT_REDIRECT_URL = 'https://tasteandtradition.ru'
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
 # ВОТ ЭТИ РЕБЯТА !!!!!! 
 
 ROOT_URLCONF = 'store.urls'
