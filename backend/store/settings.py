@@ -17,7 +17,7 @@ SECRET_KEY = 'django-insecure-k&%4gto_(bvb+%^e!uq!2=&5yyz69*8jcjaf!w+#sxs(7)wl$@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['root@155.212.211.196', '155.212.211.196', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['root@83.222.19.148', '83.222.19.148', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -51,8 +51,8 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    'http://root@155.212.208.151',
-    'http://155.212.208.151',
+    'http://root@83.222.19.148',
+    'http://83.222.19.148',
     'http://root@155.212.211.196',
     'http://155.212.211.196',
 ]
@@ -62,12 +62,12 @@ SESSION_COOKIE_HTTPONLY = True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:5173',
     'http://127.0.0.1:5173',
-    'http://root@155.212.208.151',
-    'http://155.212.208.151',
+    'http://root@83.222.19.148',
+    'http://83.222.19.148',
     'http://root@155.212.211.196',
     'http://155.212.211.196',
 ]
-LOGOUT_REDIRECT_URL = 'http://155.212.211.196'
+LOGOUT_REDIRECT_URL = 'http://83.222.19.148'
 # ВОТ ЭТИ РЕБЯТА !!!!!! 
 
 ROOT_URLCONF = 'store.urls'
